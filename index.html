@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U.S. Government Quiz</title>
+    <title>U.S. Government Quiz (English and Amharic)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -68,7 +68,7 @@
     </style>
 </head>
 <body>
-    <h1>Citizenship</h1>
+    <h1>U.S. Government Quiz (English and Amharic)</h1>
     <div id="quiz-container">
         <div class="question-indicator" id="question-indicator"></div>
         <div class="question" id="question-text"></div>
@@ -81,171 +81,174 @@
     <div id="results" class="hidden"></div>
 
     <script>
-     const questions = [
-    {
-        question: "The House of Representatives has how many voting members?",
-        options: ["One hundred (100)", "Two hundred (200)", "Three hundred fifty (350)", "Four hundred thirty-five (435)"],
-        answer: 3
-    },
-    {
-        question: "We elect a U.S. Representative for how many years?",
-        options: ["Two (2)", "Four (4)", "Six (6)", "Eight (8)"],
-        answer: 0
-    },
-    {
-        question: "Name your U.S. Representative.",
-        options: ["AL Green", "Nancy Pelosi", "Kevin McCarthy", "Mitch McConnell"],
-        answer: 0
-    },
-    {
-        question: "Who does a U.S. Senator represent?",
-        options: ["Only their party members", "Only those who voted for them", "All people of the state", "Only the wealthy"],
-        answer: 2
-    },
-    {
-        question: "Why do some states have more Representatives than other states?",
-        options: ["Because of the state's population", "Because they have more land area", "Because they have more electoral votes", "Because they joined the Union earlier"],
-        answer: 0
-    },
-    {
-        question: "We elect a President for how many years?",
-        options: ["Two (2)", "Four (4)", "Six (6)", "Eight (8)"],
-        answer: 1
-    },
-    {
-        question: "In what month do we vote for President?",
-        options: ["September", "October", "November", "December"],
-        answer: 2
-    },
-    {
-        question: "What is the name of the President of the United States now?",
-        options: ["Donald Trump", "Barack Obama", "Joe Biden", "George W. Bush"],
-        answer: 2
-    },
-    {
-        question: "What is the name of the Vice President of the United States now?",
-        options: ["Mike Pence", "Kamala Harris", "Joe Biden", "Dick Cheney"],
-        answer: 1
-    },
-    {
-        question: "If the President can no longer serve, who becomes President?",
-        options: ["The Vice President", "The Speaker of the House", "The Secretary of State", "The Chief Justice"],
-        answer: 0
-    },
-    {
-        question: "If both the President and the Vice President can no longer serve, who becomes President?",
-        options: ["The Secretary of State", "The Chief Justice", "The Speaker of the House", "The Senate Majority Leader"],
-        answer: 2
-    },
-    {
-        question: "Who is the Commander in Chief of the military?",
-        options: ["The Secretary of Defense", "The President", "The Chairman of the Joint Chiefs of Staff", "The Vice President"],
-        answer: 1
-    },
-    {
-        question: "Who signs bills to become laws?",
-        options: ["The President", "The Vice President", "The Speaker of the House", "The Chief Justice"],
-        answer: 0
-    },
-    {
-        question: "Who vetoes bills?",
-        options: ["The Chief Justice", "The Senate Majority Leader", "The Speaker of the House", "The President"],
-        answer: 3
-    },
-    {
-        question: "What does the President's Cabinet do?",
-        options: ["Makes laws", "Advises the President", "Decides court cases", "Approves the budget"],
-        answer: 1
-    },
-    {
-        question: "What are two Cabinet-level positions?",
-        options: ["Secretary of State and Secretary of Defense", "Chief of Staff and Press Secretary", "Senate Majority Leader and House Speaker", "Chief Justice and Attorney General"],
-        answer: 0
-    },
-    {
-        question: "What does the judicial branch do?",
-        options: ["Makes laws", "Enforces laws", "Reviews laws", "Approves the budget"],
-        answer: 2
-    },
-    {
-        question: "What is the highest court in the United States?",
-        options: ["The Federal Court", "The Supreme Court", "The District Court", "The Court of Appeals"],
-        answer: 1
-    },
-    {
-        question: "How many justices are on the Supreme Court?",
-        options: ["Seven (7)", "Nine (9)", "Eleven (11)", "Thirteen (13)"],
-        answer: 1
-    },
-    {
-        question: "Who is the Chief Justice of the United States now?",
-        options: ["John G. Roberts Jr.", "Clarence Thomas", "Samuel Alito", "Sonia Sotomayor"],
-        answer: 0
+    const questions = [
+        {
+            question: "1. What is the supreme law of the land?\nየአገሪቱ የበላይ ሕግ ምንድን ነው?",
+            options: ["The Constitution (ሕገ መንግሥት)", "The Bill of Rights (የመብቶች ድንጋጌ)", "The Declaration of Independence (የነፃነት አዋጅ)", "The Supreme Court (ከፍተኛው ፍርድ ቤት)"],
+            answer: 0
+        },
+        {
+            question: "2. What does the Constitution do?\nሕገ መንግሥቱ የሚያደርገው ምንድን ነው?",
+            options: ["Sets up the government(መንግሥት ይመሰረታል;)", "defines the government (መንግስትን ይገልፃል።)", "protects the basic rights of Americans (የአሜሪካውያንን መሰረታዊ መብቶች ይጠብቃል።)", "All the above (ሁሉም ከላይ)"],
+            answer: 3
+        },
+        {
+            question: "3. What are the first three words of the Constitution?\nራስን በራስ የማስተዳደር እሳቤ በሕገ መንግሥቱ በመጀመሪያ ሶስት ቃላት ውስጥ ተመልክቷል፡፡",
+            options: ["We the People (እኛ ሕዝቦች)", "In God We Trust (በእግዚአብሔር እናምናለን)", "E Pluribus Unum (ከብዙ አንድ)", "United We Stand (እኛ በትዕግሥት እንቆማለን)"],
+            answer: 0
+        },
+        {
+            question: "4. What is an amendment?\nማሻሻያ (አሜንድመንት) ምንድን ነው?",
+            options: ["A new law (አዲስ ሕግ)", "A change [to the Constitution]; an addition [to the Constitution] (ለውጥ [ለሕገ መንግሥቱ] ፤ ተጨማሪ [ለሕገ መንግሥቱ])", "State law (የግዛት ህግ)", "A decision (ውሳኔ)"],
+            answer: 1
+        },
+        {
+            question: "5. What do we call the first 10 amendments to the Constitution?\nየሕገ መንግሥቱን የመጀመሪያዎቹ 10 ማሻሻያዎች ምን ብለን እንጠራቸዋለን?",
+            options: ["The Bill of Rights (የመብቶች ድንጋጌ)", "The Preamble (መሰረተ ሐሳብ)", "The Articles of Confederation (የምክር ቤቱ ጽሑፎች)", "The Federalist Papers (የፌደራል ደብዳቤዎች)"],
+            answer: 0
+        },
+        {
+            question: "6. What is one right or freedom from the First Amendment?\nከመጀመሪያው ማሻሻያ ውስጥ አንድ መብት ወይም ነፃነት የቱ ነው?",
+            options: ["Right to vote (የመምረጥ መብት)", "Right to bear arms (የጦር መሣሪያ መያዝ መብት)", "Freedom of speech (ንግግር ነፃነት)", "Freedom of travel (የመንቀሳቀስ ነፃነት)"],
+            answer: 2
+        },
+        {
+            question: "7. How many amendments does the Constitution have?\nሕገ መንግሥቱ ስንት ማሻሻያዎች አሉት?",
+            options: ["Twenty-five (25)", "Thirty (30)", "Twenty-seven (27)", "Twenty (20)"],
+            answer: 2
+        },
+        {
+            question: "8. What did the Declaration of Independence do?\nየነፃነት አዋጅ ያደረገው ምንድን ነው?",
+            options: ["Declared war (ጦርነትን አወጀ)", "Announced our independence (ነፃነታችንን አሳወቀ)", "Established a government (መንግሥትን አቋቋመ)", "Signed a treaty (አስማተው ተፈራሩ)"],
+            answer: 1
+        },
+        {
+            question: "9. What are two rights in the Declaration of Independence?\nበነፃነት አዋጁ ሁለት መብቶች ምንድን ናቸው?",
+            options: ["Life; liberty; pursuit of happiness (ሕይወት ፤ ነፃነት ፤ ደስተኛነትን መሻት)", "Pursuit of jobs (ስራዎችን መፈለግ)", "Right to bear arms (የጦር መሣሪያ መያዝ)", "Right to vote (የመምረጥ መብት)"],
+            answer: 0
+        },
+        {
+            question: "10. What is freedom of religion?\nየሃይማኖት ነፃነት ምንድን ነው?",
+            options: [ "You must follow a religion (ሃይማኖትን መከተል አለብህ)", "it is illegal to practice a religion (ሃይማኖትን መከተል ሕገ-ወጥ ነው)", "Only one religion is allowed (አንድ ሃይማኖት ብቻ ይቻላል)", " You can practice any religion, or not practice a religion (ማንኛውንም ሃይማኖት መከተል ፡ ወይንም ምንም ሃይማኖት አለመከተል ይቻላል)"],
+            answer: 0
+        },
+        {
+            question: "11. What is the economic system in the United States?\nየአሜሪካ ኢኮኖሚክ ሥርዓት ምንድን ነው?",
+            options: ["Capitalist economy (ካፒታሊስት ኢኮኖሚ)", "Socialist economy (ሶሻሊስት ኢኮኖሚ)", "Communist economy (ኮሚዩኒስት ኢኮኖሚ)", "Mixed economy (በእኩል ያቀረበ ኢኮኖሚ)"],
+            answer: 0
+        },
+        {
+            question: "12. What is the rule of law?\nየሕግ አስተዳደር ምንድን ነው?",
+            options: [ "No one can follow the law (ማንም ሰው ሕጉን ሊከተል አይችልም)", "Only leaders can follow the law (መሪዎች ብቻ ሕጉን ሊከተሉ ይችላሉ)", "Everyone must follow the law (ሁሉም ሕጉን ሊከተል አለበት)", "The law applies only to citizens (ሕጉ ለሕዝቡ ብቻ ይሰራል)"],
+            answer: 2
+        },
+        {
+            question: "13. Name one branch of government.\nአንድ የመንግሥት ቅርንጫፍ ስም ይጥቀሱ።",
+            options: ["Department of Education (የትምህርት ጽ/ቤት)", "Executive (ኤክሰክዩቲቭ)", "National Guard (ናሽናል ጋርድ)", "Bureaucracy (ቢሮክራሲ)"],
+            answer: 1
+        },
+        {
+            question: "14. What stops one branch from becoming too powerful?\nአንድ ቅርንጫፍ ከሌላ በላይ ኃይለኛ እንዳይሆን የሚከላከል ምንድን ነው?",
+            options: [ "Separation of powers (ሥልጣናትን ማለያየት)", "A constitution (ህገ መንግሥት)", "A military (ወታደራዊ ኃይል)", "Checks and balances (ቁጥጥርና ሚዛን)"],
+            answer: 3
+        },
+        {
+            question: "15. Who is in charge of the executive branch?\nየኤክሰክዩቲቭ ቅርንጫፍ አስተዳደርን የሚቆጥረው ማን ነው?",
+            options: [ "The Speaker of the House (የምክር ቤቱ አስተዳዳሪ)", "The President (ፕሬዚዳንት)", "The Chief Justice (ሕጉን ለማስተዳደር ሰላባ በሚሰጥው)", "The Military General (የወታደራዊ ኃይል መሪ)"],
+            answer: 1
+        },
+        {
+            question: "16. Who makes federal laws?\nየፌደራል ሕጎችን የሚያወጣው ማን ነው?",
+            options: [ "The President (ፕሬዚዳንት)", "Congress (ኮንግረስ)", "The Judicial branch (ግምገማ ቅርንጫፍ)", "The Vice President (አቶ ፕሬዚዳንት)"],
+            answer: 1
+        },
+        {
+            question: "17. What are the two parts of Congress?\nየኮንግረሱ ሁለት ክፍሎች ምንድን ናቸው?",
+            options: [ "Executive and Legislative (ኤክሰክዩቲቭ እና ሌጂስላቲቭ)", "Judicial and Bureaucracy (ግምገማና ቢሮክራሲ)", "Military and Civilian (ወታደራዊ እና ነዋሪ)", "Senate and House of Representatives (ሴኔት እና የህዝብ ተወካዮች)"],
+            answer: 3
+        },
+        {
+            question: "18. How many U.S. Senators are there?\nበአሜሪካ ስንት ሴኔቶች አሉ?",
+            options: ["50", "100", "150", "200"],
+            answer: 1
+        },
+        {
+            question: "19. We elect a U.S. Senator for how many years?\nሴኔተርን ለስንት አመት እንመርጣለን?",
+            options: ["2 years (ሁለት አመት)", "6 years (ስድስት አመት)", "4 years (አራት አመት)", "8 years (ስምንት አመት)"],
+            answer: 1
+        },
+        {
+            question: "20. Who is one of your state’s U.S. Senators now?\nበአሁኑ ጊዜ ከእርስዎ ግዛት ከዩኤስ ሴናተሮች አንዱ ማን ነው?",
+            options: ["Ted Cruz (ቴድ ክሩዝ)", "Bernie Sanders (በርኒ ሳንደርስ)", "Nancy Pelosi (ናንሲ ፔሎሲ)", "Kamala Harris (ካማላ ሃሪስ)"],
+            answer: 0
+        }
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let lastCorrectAnswer = -1; // Track the last correct answer
+
+    function loadQuestion() {
+        const question = questions[currentQuestionIndex];
+        document.getElementById('question-indicator').innerText = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+        document.getElementById('question-text').innerText = question.question;
+        const optionsContainer = document.getElementById('answer-options');
+        optionsContainer.innerHTML = '';
+
+        // Render options
+        question.options.forEach((option, index) => {
+            optionsContainer.innerHTML += `
+                <div class="option" onclick="selectOption(${index})">${option}</div>
+            `;
+        });
+
+        document.getElementById('feedback').classList.add('hidden');
+        document.getElementById('submit-answer').classList.remove('hidden');
+        document.getElementById('next-question').classList.add('hidden');
     }
-];
 
-        let currentQuestionIndex = 0;
-        let score = 0;
-
-        function loadQuestion() {
-            const question = questions[currentQuestionIndex];
-            document.getElementById('question-indicator').innerText = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
-            document.getElementById('question-text').innerText = question.question;
-            const optionsContainer = document.getElementById('answer-options');
-            optionsContainer.innerHTML = '';
-
-            question.options.forEach((option, index) => {
-                optionsContainer.innerHTML += `
-                    <div class="option" onclick="selectOption(${index})">${option}</div>
-                `;
-            });
-
-            document.getElementById('feedback').classList.add('hidden');
-            document.getElementById('submit-answer').classList.remove('hidden');
-            document.getElementById('next-question').classList.add('hidden');
-        }
-
-        function selectOption(index) {
-            const options = document.querySelectorAll('.option');
-            options.forEach((option, i) => {
-                option.style.backgroundColor = i === index ? '#cce5ff' : '#fff';
-            });
-            document.getElementById('submit-answer').dataset.selected = index;
-        }
-
-        document.getElementById('submit-answer').addEventListener('click', function() {
-            const selectedAnswer = document.getElementById('submit-answer').dataset.selected;
-            if (selectedAnswer !== undefined) {
-                const selectedValue = parseInt(selectedAnswer);
-                const correctAnswer = questions[currentQuestionIndex].answer;
-
-                if (selectedValue === correctAnswer) {
-                    score++;
-                    document.getElementById('feedback').innerText = "Correct!";
-                } else {
-                    document.getElementById('feedback').innerText = "Wrong! The correct answer was: " + questions[currentQuestionIndex].options[correctAnswer];
-                }
-
-                document.getElementById('feedback').classList.remove('hidden');
-                document.getElementById('submit-answer').classList.add('hidden');
-                document.getElementById('next-question').classList.remove('hidden');
-            } else {
-                alert("Please select an answer before submitting.");
-            }
+    function selectOption(index) {
+        const options = document.querySelectorAll('.option');
+        options.forEach((option, i) => {
+            option.style.backgroundColor = i === index ? '#cce5ff' : '#fff';
         });
+        document.getElementById('submit-answer').dataset.selected = index;
+    }
 
-        document.getElementById('next-question').addEventListener('click', function() {
-            currentQuestionIndex++;
-            if (currentQuestionIndex < questions.length) {
-                loadQuestion();
+    document.getElementById('submit-answer').addEventListener('click', function() {
+        const selectedAnswer = document.getElementById('submit-answer').dataset.selected;
+        if (selectedAnswer !== undefined) {
+            const selectedValue = parseInt(selectedAnswer);
+            const correctAnswer = questions[currentQuestionIndex].answer;
+
+            if (selectedValue === correctAnswer) {
+                score++;
+                document.getElementById('feedback').innerText = "Correct!";
             } else {
-                document.getElementById('quiz-container').classList.add('hidden');
-                document.getElementById('results').innerHTML = `You scored ${score} out of ${questions.length}.`;
-                document.getElementById('results').classList.remove('hidden');
+                document.getElementById('feedback').innerText = "Wrong! The correct answer was: " + questions[currentQuestionIndex].options[correctAnswer];
             }
-        });
 
-        loadQuestion();
-    </script>
+            document.getElementById('feedback').classList.remove('hidden');
+            document.getElementById('submit-answer').classList.add('hidden');
+            document.getElementById('next-question').classList.remove('hidden');
+        } else {
+            alert("Please select an answer before submitting.");
+        }
+    });
+
+    document.getElementById('next-question').addEventListener('click', function() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+            loadQuestion();
+        } else {
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('results').innerHTML = `You scored ${score} out of ${questions.length}.`;
+            document.getElementById('results').classList.remove('hidden');
+        }
+    });
+
+    loadQuestion();
+</script>
+
 </body>
 </html>
